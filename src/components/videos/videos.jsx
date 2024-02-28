@@ -7,7 +7,7 @@ const Videos = ({videos}) => {
   return (
     <Box 
       width={"100%"} 
-      gap={2}
+      gap={1}
       display='grid'
       gridTemplateColumns='repeat(4, 1fr)'
     >
