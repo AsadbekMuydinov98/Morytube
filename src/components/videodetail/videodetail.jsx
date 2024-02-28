@@ -5,6 +5,7 @@ import { ApiService } from '../service/api.service'
 import ReactPlayer from 'react-player'
 import { CheckCircle, FavoriteOutlined, MarkChatRead, Tag, Visibility } from '@mui/icons-material'
 import {Loader, Videos} from '../';
+import RelatedVideos from '../videos/related-videos'
 
 const VideoDetail = () => {
   const {id} = useParams()
@@ -87,7 +88,7 @@ const VideoDetail = () => {
 					overflow={'scroll'}
 					maxHeight={'120vh'}
 				>
-					<Videos videos={relatedVideo} />
+					<RelatedVideos videos={relatedVideo} />
 				</Box>
       </Box>
     </Box>
